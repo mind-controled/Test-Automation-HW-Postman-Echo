@@ -1,15 +1,12 @@
-image: Ubuntu  
+image: Ubuntu
 
-stack: jdk 11  
+stack: jdk 11
 
 branches:
   only:
-    - master  
+    - master
 
-build: off  
-
-install:
-  - java -jar ./artifacts/app-mbank.jar &
+build: off
 
 build_script:
   - ./gradlew test --info
